@@ -31,7 +31,21 @@ def to_prefix(equation: str) -> str:
     prefix = []
 
     for el in equation.split()[::-1]:
-        pass
+        if el.isdigit():
+            prefix.append(el)
+        elif el == ")" or el in ops:
+            op_stack.append(el)
+        elif el == "(":
+            while op_stack and op_stack[-1] != ")":
+                prefix.append(op_stack.pop())
+            op_stack.pop()
+
+            if ")" not in op_stack:
+                while op_stack:
+                    if op_stack[-1] == ")":
+                        op_stack.pop()
+                    else:
+                        prefix.append(op_stack.pop())
 
     while op_stack:
         prefix.append(op_stack.pop())

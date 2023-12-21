@@ -5,4 +5,4 @@ class Singleton:
         return cls.single_cls
     
 
-a = Singleton()
+b = Singleton()

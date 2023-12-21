@@ -4,4 +4,5 @@ class Singleton:
             cls.single_cls = super(Singleton, cls).__new__(cls)
         return cls.single_cls
 
+
 a = Singleton()

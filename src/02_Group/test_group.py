@@ -33,7 +33,7 @@ class TestPerson:
         assert hasattr(polina, "name")
         assert hasattr(polina, "surname")
         assert hasattr(polina, "sex")
-        assert hasattr(polina, "b_day")
+        assert hasattr(polina, "bday")
 
     @staticmethod
     def test_error_init():
@@ -48,11 +48,11 @@ class TestPerson:
 
     def test_ages(self, polina: Person):
         assert hasattr(polina, "full_ages")
-        assert polina.full_ages() == datetime.now(tz=timezone.utc).year - polina.b_day.year
+        assert polina.full_ages() == datetime.now(tz=timezone.utc).year - polina.bday.year
 
         for i in range(10):
             polina.b_day = date(1990 + i, 4, 12)
-            assert polina.full_ages() == datetime.now(tz=timezone.utc).year - polina.b_day.year
+            assert polina.full_ages() == datetime.now(tz=timezone.utc).year - polina.bday.year
 
     @staticmethod
     def test_eq(polina: Person):

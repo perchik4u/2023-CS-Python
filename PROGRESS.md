@@ -37,9 +37,9 @@
 <tr><td><a href="https://github.com/perchik4u/2023-CS-Python">Redchenko Michail</a</td>
     <td>✔️</td><td>✔️</td><td>❌</td><td>❌</td></tr>
 <tr><td><a href="https://github.com/LemonSkvid/2023-CS-Python">Sanarov Bogdan</a</td>
-    <td>✔️</td><td>❌</td><td>❌</td><td>❌</td></tr>
+    <td>✔️</td><td>✔️</td><td>✔️</td><td>❌</td></tr>
 <tr><td><a href="https://github.com/linsivs/2023-CS-Python">Sivtseva Alina</a</td>
-    <td>✔️</td><td>✔️</td><td>❌</td><td>❌</td></tr>
+    <td>✔️</td><td>✔️</td><td>✔️</td><td>❌</td></tr>
 <!-- Spicin -->
 <tr><td><a href="https://github.com/Ronyleno/2023-CS-Python">Studenichin Egor</a</td>
     <td>✔️</td><td>✔️</td><td>❌</td><td>❌</td></tr>
